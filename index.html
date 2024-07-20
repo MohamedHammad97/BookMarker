@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-3">Book Marker</h1>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="mb-4">
+                <i class="icofont-book-mark"></i>
+                Bookmark your favorite sites
+                <i class="icofont-book-mark"></i>
+            </h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="siteName" class="mb-2 fw-bolder fs-5"><i class="icofont-book-mark "></i> Site
+                    Name</label>
+                <input type="text" id="siteName" class="form-control mb-4" placeholder="Book Mark Name">
+                <p class="text-danger d-none" id="wrongName"> Please Enter First Letter Capital</p>
+            </div>
+            <div class="form-group">
+                <label for="siteURL" class="mb-2 fw-bolder fs-5"><i class="icofont-link "></i> Site URL</label>
+                <input type="url" id="siteURL" class="form-control mb-4" placeholder="Website URL">
+                <p class="text-danger d-none" id="wrongURL">Invalid URL Please Enter Valid URL</p>
+            </div>
+            <button id="submit" class="btn btn-danger px-5 form-control my-4 fs-4">Submit</button>
+            <button id="updateBtn" class="btn form-control fs-4 mb-3 text-bg-warning d-none">Update Book Marker</button>
+            <div class="form-group">
+                <label for="search" class="mb-2 fs-3 text-white">Search</label>
+                <input type="text" id="search" class="form-control mb-5">
+            </div>
+        </form>
+        <table class="table text-center fs-5">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tBody">
+        
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+body {
+    background-image: url(../img/1.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+h1 {
+    color: #3ca55c;
+}
+
+h2 {
+    background-image: linear-gradient(to right, #2879e4, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
